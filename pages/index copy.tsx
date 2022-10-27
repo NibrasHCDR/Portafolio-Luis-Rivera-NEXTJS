@@ -1,10 +1,10 @@
 import type { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import AcercaDeMi from "../components/AcercaDeMi";
-import Contacto from '../components/Contacto';
+import About from "../components/AcercaDeMi";
+import ContactMe from '../components/Contacto';
 import Header from '../components/Header';
-import Portada from '../components/Portada';
+import Hero from '../components/Portada';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import WorkExperience from '../components/WorkExperience';
@@ -26,7 +26,7 @@ type Props = {
 
 const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
   return (
-    <div className="bg-[#142850] text-white h-screen snap-y snap-mandatory
+    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
      overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#7FFFD4]/80">
       <Head>
         <title>Luis Eduardo Rivera Araya | XplenDev</title>
@@ -37,12 +37,12 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
 
       { /* Hero */}
       <section id="hero" className="snap-start">
-       <Portada pageInfo={pageInfo} />
+       <Hero pageInfo={pageInfo} />
       </section>
 
       { /* About */}
       <section  id="about" className="snap-center">
-        <AcercaDeMi pageInfo={pageInfo}/>
+        <About pageInfo={pageInfo}/>
       </section>
 
       { /* Experience */}
@@ -63,7 +63,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
 
       { /* Contact Me */}
       <section id="contact" className="snap-start">
-        <Contacto />
+        <ContactMe />
       </section>
 
       <Link href="#hero">
@@ -71,7 +71,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           <div className="flex items-center justify-center">
             <img
             className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0
-            cursor-ponter hover:animate-ping"
+            cursor-ponter"
             src="https://st2.depositphotos.com/7107694/10389/v/450/depositphotos_103895658-stock-illustration-arrow-up-flat-vector-icon.jpg"
             alt=""/>
           </div>
