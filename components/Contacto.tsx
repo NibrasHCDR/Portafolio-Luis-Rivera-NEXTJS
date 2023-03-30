@@ -1,6 +1,7 @@
 import React from 'react';
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { motion } from 'framer-motion';
 
 type Props = {}
 
@@ -12,61 +13,119 @@ type Inputs = {
 }
 
 function ContactMe({}: Props) {
-  const { register, handleSubmit, } = useForm<Inputs>();
-
-  const onSubmit: SubmitHandler<Inputs> = (formData) =>
-    window.location.href = `mailto:l.riveraa664@hotmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}
-    (${formData.email})`; 
 
   return (
-    <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row
-    max-w7xl px-10 justify-evenly mx-auto items-center">
-        <h3 className="absolute top-24 uppercase tracking-[20px] text-[#7FFFD4] text-2xl">
+
+    <div className="bg-black/20">
+      <div>
+        <h3 className="titulos text-center">
             Contacto
         </h3>
+        </div>
 
-         <div className="flex flex-col space-y-10">
-            <h4 className="text-4xl font-semibold text-center">
-                ¿Necesitas de mis servicios informáticos?{ " " }
-                <span className="decoration-[#7FFFD4]/50 underline">Contactame.</span>
-            </h4>
-          <div className="space-y-10">
+      
+
+    <div className="flex">
+
+    <div className="h-screen xl:w-[50%] w-screen
+    justify-evenly rounded-r-lg
+    z-0 hidden lg:inline-flex">
+
+   <motion.div className="inline-block w-[85%] h-[90%] min-w-[45%] mx-auto my-auto rounded-lg bg-[#172554] space-y-10">
+    
+<div className="flex h-[25%] w-full mt-14">
+
+
+    <div className="w-[45%] h-[100%] gif-repair mx-[5.3%] hidden md:inline-flex">
+    
+
+    </div>
+
+    <motion.h1 className="text-center my-auto mx-[5%] textogeneral tracking-[1px] text-[#7FFFD4] cursor-pointer hover:scale-110">Servicio Técnico Computacional (Mantención - Update - Gaming)</motion.h1>
+    </div>
+
+<div className="flex h-[25%] w-full mt-14">
+
+    <div className="w-[45%] h-[100%] gif-repair2 mx-[5.3%] hidden md:inline-flex">
+    
+    </div>
+    <motion.h1 className="text-center justify-center my-auto mx-[5%] textogeneral tracking-[1px] text-[#7FFFD4] cursor-pointer hover:scale-110">Desarrollo de Proyectos Informáticos Web - Escritorio - Móviles</motion.h1>
+    </div>
+
+<div className="flex h-[25%] w-full mt-14">
+
+    <div className="w-[25%] h-[100%] gif-repair3 mx-[7.5%] hidden md:inline-flex">
+    
+    </div>
+    <motion.h1 className="text-center justify-center my-auto mx-[20%] textogeneral tracking-[1px] text-[#7FFFD4] cursor-pointer hover:scale-110">Soporte Remoto</motion.h1>
+    </div>
+
+
+
+
+
+
+   </motion.div>
+        </div>
+
+        <div className="flex h-screen xl:w-[50%] w-screen rounded-l-lg object-center">
+          <motion.div className="w-[85%] h-[90%] min-w-[360px] mx-auto my-auto rounded-lg backdrop-blur-xl">
+
+        <div className="space-y-10 my-[15%]">
             <div className="flex items-center space-x-5 justify-center">
-                <PhoneIcon className="text-[#7FFFD4] h-7 w-7 animate-pulse" />
-                <p className="text-2xl">+56940898950</p>
+                <PhoneIcon className="text-[#7FFFD4]/60 h-8 w-8" />
+                <p className="text-2xl text-[#7FFFD4]/80">+56940898950</p>
             </div>
 
             <div className="flex items-center space-x-5 justify-center">
-                <EnvelopeIcon className="text-[#7FFFD4] h-7 w-7 animate-pulse" />
-                <p className="text-2xl">l.riveraa664@hotmail.com</p>
+                <EnvelopeIcon className="text-[#7FFFD4]/60 h-8 w-8" />
+                <p className="text-2xl text-[#7FFFD4]/80">l.riveraa664@hotmail.com</p>
             </div>
 
             <div className="flex items-center space-x-5 justify-center">
-                <MapPinIcon className="text-[#7FFFD4] h-7 w-7 animate-pulse" />
-                <p className="text-2xl">Chile</p>
+                <MapPinIcon className="text-[#7FFFD4]/60 h-8 w-8" />
+                <p className="text-2xl text-[#7FFFD4]/80">Chile</p>
             </div>
           </div>
+          
 
-         <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+         <form 
+          action="https://formsubmit.co/l.riveraa664@hotmail.com" 
+          method="POST"
+          className="flex flex-col w-fit space-y-2 mx-auto"
           >
             <div className="flex space-x-2">
-                <input {...register('name')} placeholder="Nombre" className="contactInput" type="text" />
-                <input {...register('email')} placeholder="Email" className="contactInput" type="email" />
+              <input placeholder="Nombre" className="contactInput" type="text" name="Nombre"/>
+              <input placeholder="Email" className="contactInput" type="email" name="Email"/>
+
             </div>
-
-            <input {...register('subject')} placeholder="Asunto" className="contactInput" type="text" />
-
-            <textarea {...register('message')} placeholder="Mensaje" className="contactInput" />
+            <input placeholder="Asunto" className="contactInput" type="text" name="Asunto"/>
+            <input placeholder="Mensaje" className="contactInput" name="Mensaje"/>
+            
             <br>
             </br>
-            <button className="bg-[#7FFFD4] py-5 px-10 rounded-md text-black font-bold
-            text-lg hover:animate-bounce">
+            <motion.button
+             className="bg-[#142850] rounded-md text-white font-bold
+            text-lg hover:scale-110 mx-32 h-12" type="submit"
+            initial={{
+              y: 0,
+              opacity: 0,
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1 }}
+            transition={{ duration: 0.2 }}
+            whileInView={{ opacity: 1, y: 0 }}>
                 Enviar
-            </button>
+            </motion.button>
          </form>
-         </div>
+         </motion.div>
+
+
+        </div>
+
+        
+        </div>
+
         </div>
   )
 }

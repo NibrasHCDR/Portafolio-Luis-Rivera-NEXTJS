@@ -2,81 +2,72 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion";
 import Link from 'next/link';
-import { Social } from '../typings';
 import AnimacionCubo from './AnimacionCubo';
 
 type Props = {
-    socials: Social[]
+    
 };
 
-export default function Header({ socials }: Props) {
+export default function Header() {
   return (
-  <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto
-    z-20 xl:items-center">
+  <header className="p-6 flex items-start justify-center mx-auto
+    z-20 bg-black/20">
     <motion.div 
+    
+    animate={{
+        x: 0,
+        opacity: 1,
+        scale: 1.2,
+
+    }}
+    transition={{
+        duration: 1.7,
+
+    }}
     initial={{
         x: -500,
         opacity: 0,
-        scale: 0.5,
+        scale: 2,
     }}
-    animate={{
-        x: 0,
-        opacity: 1,
-        scale: 1,
 
-    }}
-    transition={{
-        duration: 1.5,
-
-    }}
-    className="flex flex-row items-center hover:animate-pulse"
+    className="flex flex-row items-center"
     >
         {/*Social Icons */}
-        {socials.map((social) => (
+        
             <SocialIcon
-            key={social._id}
-            url={social.url}
+            className="hover:animate-pulse hover:scale-150"
+            key=""
+            url="https://www.instagram.com/?hl=en"
             fgColor="#7FFFD4"
             bgColor="transparent"
             />
-        ))}
 
-    </motion.div>
+            <SocialIcon
+            className="hover:animate-pulse hover:scale-150"
+            key=""
+            url="https://www.facebook.com/TeckwareRegiones"
+            fgColor="#7FFFD4"
+            bgColor="transparent"
+            />
 
-    <AnimacionCubo/>
+           <SocialIcon
+            className="hover:animate-pulse hover:scale-150"
+            key=""
+            url="https://www.linkedin.com/in/luis-rivera-araya-35202423b/"
+            fgColor="#7FFFD4"
+            bgColor="transparent"
+            />
 
-    <Link href="#contact">
-    
-
-    <motion.div 
-    initial={{
-        x: 500,
-        opacity: 0,
-        scale: 0.5,
-    }}
-    animate={{
-        x: 0,
-        opacity: 1,
-        scale: 1,
-    }}
-    transition={{
-        duration: 1.5
-    }}
-
-    className="flex flex-row items-center text-gray-300 cursor-pointer">
-
+            <SocialIcon
+            className="hover:animate-pulse hover:scale-150"
+            key=""
+            url="https://github.com/NibrasHCDR"
+            fgColor="#7FFFD4"
+            bgColor="transparent"
+            />
         
-    <SocialIcon 
-            className="cursor-pointer hover:animate-pulse"
-            network='email'
-            fgColor='#7FFFD4'
-            bgColor='transparent'
-        />
-        <p className='uppercase hidden md:inline-flex text-sm text-[#7FFFD4]/80'>
-           Contactar
-        </p>
+
     </motion.div>
-    </Link>
   </header>
   );
 }

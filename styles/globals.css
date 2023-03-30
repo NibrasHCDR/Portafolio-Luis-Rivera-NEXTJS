@@ -3,16 +3,198 @@
 @tailwind utilities;
 
 @layer components{
+
+  .custom-img-fondo {
+    background-image: url('https://i.postimg.cc/Gt3xFSFh/hd-wallpaper-5858656-1920.jpg')
+}
+
+.gif-repair {
+  background-image: url(../public/animation_1.gif);
+  background-size: cover;
+}
+
+.gif-repair2 {
+  background-image: url(../public/animation_2.gif);
+  background-size: cover;
+}
+
+.gif-repair3 {
+  background-image: url(../public/animation_3.gif);
+  background-size: cover;
+}
+    
+@media screen and (max-width: 540px) {
+   .hidde-scrollbar-smarth {
+    @apply scrollbar-none
+   }
+  }
+
+
+
     .heroButton{
-        @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-lg
+        font-size: 22px;
+
+        @apply px-6 py-2 border border-[#242424] rounded-full uppercase
         tracking-widest text-[#7FFFD4] transition-all
-        hover:border-[#7FFFD4]/40 hover:text-[#7FFFD4]/40 
+        hover:border-white hover:text-white
     }
 
+    @media screen and (max-width: 540px) {
+        .heroButton {
+          font-size: 14px;
+
+          @apply justify-center
+        }
+      }
+
+      /*Portada Correo l.riveraa664@hotmail.com*/
+      .portada_correo_texto{
+        font-size: 20px;
+        @apply animate-pulse
+    }
+      @media screen and (max-width: 540px) {
+        .portada_correo_texto {
+          font-size: 12px;
+        }
+      }
+
+      /*Formato para los Títulos de las Secciones*/
+      .titulos{
+        font-size: 32px;
+        @apply text-[#7FFFD4] uppercase tracking-[8.5px]
+    }
+      @media screen and (max-width: 540px) {
+        .titulos {
+          font-size: 22px;
+        }
+      }
+
+
+      /*Formato para los SubTítulos de las Secciones*/
+      .subtitulos{
+        font-size: 27px;
+        @apply text-[#7FFFD4] uppercase tracking-[8.5px]
+    }
+      @media screen and (max-width: 540px) {
+        .subtitulos {
+          font-size: 17px;
+        }
+      }
+
+      /*Formato para los Textos Generales*/
+      .textogeneral{
+        font-size: 20px;
+        @apply tracking-[3.5px]
+        
+    }
+      @media screen and (max-width: 540px) {
+        .textogeneral {
+          font-size: 13.5px;
+          @apply tracking-[1.5px]
+        }
+      }
+
+      /*Formato para los Textos Titulos Card*/
+      .textotitulosCard{
+        font-size: 30px;
+        @apply uppercase 
+        
+    }
+      @media screen and (max-width: 580px) {
+        .textotitulosCard {
+          font-size: 18px;
+          @apply uppercase
+        }
+      }
+
+      /*Formato para los Textos subtitulos Card*/
+      .textosubtitulosCard{
+        font-size: 24px;
+        @apply font-bold
+        
+    }
+      @media screen and (max-width: 580px) {
+        .textosubtitulosCard {
+          font-size: 12px;
+          @apply font-bold
+        }
+      }
+
+      /*Formato para los Textos Generales Card*/
+      .textogeneralCard{
+        font-size: 20px;
+        @apply tracking-[3.5px]
+        
+    }
+      @media screen and (max-width: 580px) {
+        .textogeneralCard {
+          font-size: 12px;
+          @apply tracking-[1px]
+        }
+      }
+
+      /*Formato para Tamaño de Cards Responsivo*/
+      @media screen and (max-width: 580px) {
+        .cardCard {
+          @apply w-[120%]
+        }
+      }
+
+      /*Formato para Tamaño de ImagenCards Responsivo*/
+      .cardimagenCard {
+        @apply h-24 w-28 rounded-full object-center
+      }
+  
+      @media screen and (max-width: 580px) {
+        .cardimagenCard {
+          @apply h-10 w-12 rounded-full object-center
+        }
+      }
+
+     /*Formato para Tamaño de ImagenCardsHabilidad*/
+     .cardimagenCardHabilidad {
+      @apply h-32 w-32 rounded-full object-center
+    }
+
+      @media screen and (max-width: 660px) {
+        .cardimagenCardHabilidad {
+          @apply h-20 w-[100%] rounded-full object-center
+        }
+      }
+
+      @media screen and (max-width: 540px) {
+        .cardimagenCardHabilidad {
+          @apply h-14 w-[100%] rounded-full object-center
+        }
+      }
+
+      /*Formato para Tamaño de ImagenCards Responsivo*/
+     .cardimagenCardHabilidadDiv {
+      @apply h-screen w-[45%]
+    }
+
+      @media screen and (max-width: 540px) {
+        .cardimagenCardHabilidadDiv {
+          @apply h-screen w-[45%]
+        }
+      }
+
+
+
+      
+     
+
+    
     .contactInput{
-        @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424]
-        text-gray-500 placeholder-gray-500 transition-all focus:border-[#7FFFD4]
-        focus:text-[#7FFFD4] hover:border-[#7FFFD4]
+        @apply outline-none bg-[#142850] border-b px-6 py-4 border-[#142850]
+        text-white/60 placeholder-white transition-all focus:border-white
+        focus:text-[#7FFFD4] hover:border-white rounded-md
+    }
+
+    @media screen and (max-width: 540px) {
+      .contactInput {
+        @apply w-full px-2
+      }
     }
 }
 
@@ -22,4 +204,8 @@
     border: solid;
     display: inline-block;
     color: #7FFFD4;
+}
+
+.texto_ButtomHeader_Letras_1 {
+    font-size: 28px;
 }
