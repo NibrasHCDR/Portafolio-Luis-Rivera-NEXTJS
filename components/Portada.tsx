@@ -40,7 +40,7 @@ export default function Hero({ }: Props) {
     transition={{ duration: 1 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
-    src={"https://i.postimg.cc/k5RFdBtg/IMG-Profile-1.jpg"}
+    src={"https://i.postimg.cc/jSyXcmLB/img-Profile-Edit1.png"}
     alt=""
     />
 
@@ -49,7 +49,7 @@ export default function Hero({ }: Props) {
         Ingeniero 
       </h2>
       <h2 className="xl:text-3xl text-lg uppercase text-[#7FFFD4] pb-2 tracking-[9.5px] animate-pulse">
-        Desarollador
+        Desarrollador
       </h2>
       <h2 className="portada_correo_texto text-opacity-75 uppercase text-[#7FFFD4] pb-2 tracking-[5.5px]">
         l.riveraa664@hotmail.com
