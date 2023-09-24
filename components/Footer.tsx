@@ -19,7 +19,7 @@ function Footer({}: Props) {
       <p className="text-white font-bold text-3xl">
       <span className="text-[#7FFFD4]">Luis Eduardo Rivera </span>
             </p>
-            <p className="text-white font-bold text-3xl pb-6">Informático</p>
+            <p className="text-white font-bold text-3xl pb-6">Desarrollador</p>
             <Link href="#header">
               <li className="text-white text-md pb-2 font-semibold hover:text-[#7FFFD4] cursor-pointer">Inicio</li>
             </Link>
