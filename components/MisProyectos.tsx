@@ -5,6 +5,16 @@ import { ProyectoCard } from './ProyectoCard';
 
 export const MisProyectos = () => {
 
+    //Creamos Nuestros Proyecto 1
+    const [titulo5, setNombre5] = useState("Creación de Aplicación WEB Informativa - Arata & Montaño ABOGADOS");
+    const [imagen5, setImage5] = useState("https://i.postimg.cc/JnrGVnFD/misproyectos-1.png");
+    const [cargo5, setCargo5] = useState("Ingeniero - Desarrollador");
+    const [fecha_inicio5, setfFechaInicio5] = useState("01-12-2022");
+    const [fecha_fin5, setFechaFin5] = useState("");
+    const [descripcion5, setDescripcion5] = useState("Actualmente trabajo en el desarrollo de una aplicación WEB para la empresa Arata&Montaño ABOGADOS (arataymontañoabogados.cl) de La Serena, Chile. Utilizando tecnologías actuales, para lograr obtener una página web dinámica con animáciones y diseño completamente responsivo");
+    const [linkto5, setLinkTo5] = useState("https://www.aratamontañoabogados.cl/");
+    const [tecnologia5, setTecnologia5] = useState("tecnologias1");
+
   //Creamos Nuestros Proyecto 1
   const [titulo, setNombre] = useState("Creación de Aplicación WEB Informativa - Arata & Montaño ABOGADOS");
   const [imagen, setImage] = useState("https://i.postimg.cc/JnrGVnFD/misproyectos-1.png");
@@ -51,7 +61,7 @@ export const MisProyectos = () => {
   return (
     <div className="text-center bg-black/20">
     <h3 className="titulos">
-      Proyectos
+      Mis Proyectos
       </h3>    
     
     <motion.div
@@ -63,10 +73,13 @@ export const MisProyectos = () => {
     >
         <div className="cardCard flex space-x-5 overflow-x-scroll pb-[1%] snap-x snap-mandatory
         scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#7FFFD4]">
+          <ProyectoCard titulo={titulo5} linkto={linkto5} tecnologia={tecnologia5} descripcion={descripcion5} cargo={cargo5} fecha_inicio={fecha_inicio5} fecha_fin={fecha_fin5} imagen={imagen5}/>
             <ProyectoCard titulo={titulo} linkto={linkto} tecnologia={tecnologia} descripcion={descripcion} cargo={cargo} fecha_inicio={fecha_inicio} fecha_fin={fecha_fin} imagen={imagen}/>
             <ProyectoCard titulo={titulo2} linkto={linkto2} tecnologia={tecnologia2} descripcion={descripcion2} cargo={cargo2} fecha_inicio={fecha_inicio2} fecha_fin={fecha_fin2} imagen={imagen2}/>
             <ProyectoCard titulo={titulo3} linkto={linkto3} tecnologia={tecnologia3} descripcion={descripcion3} cargo={cargo3} fecha_inicio={fecha_inicio3} fecha_fin={fecha_fin3} imagen={imagen3}/>
             <ProyectoCard titulo={titulo4} linkto={linkto4} tecnologia={tecnologia4} descripcion={descripcion4} cargo={cargo4} fecha_inicio={fecha_inicio4} fecha_fin={fecha_fin4} imagen={imagen4}/>
+            
+
         </div>
     </motion.div>
     </div>

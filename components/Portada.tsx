@@ -15,12 +15,12 @@ export default function Hero({ }: Props) {
 
   const [text, count] = useTypewriter({
     words: [
-      "Luis Eduardo Rivera Araya",
-      "TeckwareRegiones - XplenDev", 
-      "Bienvenido a mi Portafolio"
+      "Bienvenido!",
+      "XplenDEV - EchoByte", 
+      "Luis Eduardo Rivera",
     ],
     loop: true,
-    delaySpeed: 5000,
+    delaySpeed: 3000,
   });
 
   
@@ -45,8 +45,11 @@ export default function Hero({ }: Props) {
     />
 
     <div className="z-20">
+      <h2 className="xl:text-3xl text-lg uppercase text-[#7FFFD4] pb-2 tracking-[9.5px] animate-pulse tex">
+        Ingeniero 
+      </h2>
       <h2 className="xl:text-3xl text-lg uppercase text-[#7FFFD4] pb-2 tracking-[9.5px] animate-pulse">
-        Ingeniero en Informática
+        Desarollador
       </h2>
       <h2 className="portada_correo_texto text-opacity-75 uppercase text-[#7FFFD4] pb-2 tracking-[5.5px]">
         l.riveraa664@hotmail.com

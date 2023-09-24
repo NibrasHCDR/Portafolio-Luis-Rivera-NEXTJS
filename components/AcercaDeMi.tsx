@@ -11,7 +11,6 @@ export default function AcercaDeMi({ }: Props) {
 
     <div className="text-center bg-black/20">
       <h3 className="titulos">
-    Acerca de Mi
     </h3> 
 
   <div className="flex flex-col relative h-screen text-center md:text-left
@@ -35,10 +34,10 @@ export default function AcercaDeMi({ }: Props) {
     />
     <div className="space-y-10 px-0 md:px-10">
       <h4 className="subtitulos font-semibold text-center">
-        EXTRACTO PROFESIONAL{" "} 
+        Hola! Soy Luis Eduardo{" "} 
         <span className="underline decoration-[#7FFFD4]/50"></span>{" "}
         </h4>
-        <p className="textogeneral text-start">{"Ingeniero en informática proactivo, amante de la programación y tecnología, con experiencia en proyectos personales y académicos. Excelentes habilidades de adaptabilidad. Conocimientos en lenguajes de programación como Java, JavaScript y conocimientos en tecnologías ReactJS, TailwindCSS. Dispuesto a trabajar en equipo y desarrollar habilidades en ambientes profesionales."}</p>
+        <p className="textogeneral text-start">{"Soy un Ingeniero desarrollador proactivo y apasionado por la programación y la tecnología, con experiencia en proyectos personales y académicos. Me destaco por mis excelentes habilidades de adaptabilidad y mis conocimientos en lenguajes de programación como Java, JavaScript, así como el uso de librerías actuales como ReactJS, NextJS 13 o TailwindCSS. Mi trabajo principal es el desarollo full-stack. Estoy siempre dispuesto a trabajar en equipo y a desarrollar mis habilidades en entornos profesionales."}</p>
     </div>
   </div>
   </div>
