@@ -37,7 +37,7 @@ export default function AcercaDeMi({ }: Props) {
         Hola! Soy Luis Eduardo{" "} 
         <span className="underline decoration-[#7FFFD4]/50"></span>{" "}
         </h4>
-        <p className="textogeneral text-start">{"Soy un Ingeniero desarrollador proactivo y apasionado por la programación y la tecnología, con experiencia en proyectos personales y académicos. Me destaco por mis excelentes habilidades de adaptabilidad y mis conocimientos en lenguajes de programación como Java, JavaScript, así como el uso de librerías actuales como ReactJS, NextJS 13 o TailwindCSS. Mi trabajo principal es el desarollo full-stack. Estoy siempre dispuesto a trabajar en equipo y a desarrollar mis habilidades en entornos profesionales."}</p>
+        <p className="textogeneral text-start">{"Soy un Ingeniero desarrollador proactivo y apasionado por la programación y la tecnología, con 1 año de experiencia en proyectos web. Tuve mi primer acercamiento al mundo del desarrollo y programación hace más de 10 años. Actualmente me destaco por mis excelentes habilidades de adaptabilidad y mis conocimientos en lenguajes de programación como Java, JavaScript, así como el uso de librerías actuales como ReactJS, NextJS 13 o TailwindCSS. Mi trabajo principal es el desarollo full-stack. Estoy siempre dispuesto a trabajar en equipo y a desarrollar mis habilidades en entornos profesionales."}</p>
     </div>
   </div>
   </div>

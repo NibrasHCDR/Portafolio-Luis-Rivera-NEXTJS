@@ -24,6 +24,10 @@ export const ProyectoCard = (props: { titulo: any, linkto: any, tecnologia: any,
     technologias.push('https://i.postimg.cc/dVsvw55Q/lua-logo.png');
   }
 
+  else if (tecnologia == "tecnologias5") {
+    technologias.push('https://i.postimg.cc/MT6w9vVZ/react-logo.png', 'https://i.postimg.cc/s2cdGs8k/netxjs-logo.png', 'https://i.postimg.cc/t43889Xs/javascript-logo.jpg',  'https://i.postimg.cc/BZ5YqMrz/tailwind-csslogo.jpg');
+  }
+
 
 
   return (
